@@ -1,0 +1,87 @@
+.container.contact__container {
+    width: 58%;
+    display:grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    padding-bottom: 10%;
+}
+
+.contact__header {
+    margin-top: 30%;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option {
+    /* background: var(--color-bg); */
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    padding: 0.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+h4 {
+    text-shadow: 2px 2px 2px var(--color-primary);
+}
+
+.contact__icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+/* *******FORM******* */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    /* background: transparent; */
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    border: 2px solid var(--color-primary);
+    color: var(--color-white);
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* ****************** MEDIA QUERIES ******************* */
+
+/* TABLET */
+@media screen and (max-width: 1024px) {
+   .container.contact__container {
+       grid-template-columns: 1fr;
+       gap: 2rem;
+   }
+  }
+  
+  /* MOBILE */
+  @media screen and (max-width: 600px) {
+   .container.contact__container {
+       width: var(--container-width-sm);
+   }
+
+  }
