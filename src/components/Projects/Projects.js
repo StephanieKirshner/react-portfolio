@@ -1,10 +1,9 @@
 import React from 'react'
-import './Projects.css'
 import saCircleLogo from '../../assets/saCircleLogo.png'
 import exTracker from '../../assets/exTracker.png'
 import helpMehelpU from '../../assets/helpMehelpU.png'
 import theDripProject from '../../assets/theDripProject.png'
-
+import './Projects.css'
 
 const data = [
   {
@@ -28,27 +27,27 @@ const data = [
     github: 'https://github.com',
     demo: 'https://enterurlhere.com'
   },
-  {
-    id: 4,
-    image: theDripProject,
-    title: 'The Drip Project',
-    github: 'https://github.com',
-    demo: ''
-  },
-  {
-    id: 5,
-    image: theDripProject,
-    title: 'The Drip Project',
-    github: 'https://github.com',
-    demo: ''
-  },
-  {
-    id: 6,
-    image: theDripProject,
-    title: 'The Drip Project',
-    github: 'https://github.com',
-    demo: ''
-  }
+  // {
+  //   id: 4,
+  //   image: theDripProject,
+  //   title: 'The Drip Project',
+  //   github: 'https://github.com',
+  //   demo: ''
+  // },
+  // {
+  //   id: 5,
+  //   image: theDripProject,
+  //   title: 'The Drip Project',
+  //   github: 'https://github.com',
+  //   demo: ''
+  // },
+  // {
+  //   id: 6,
+  //   image: theDripProject,
+  //   title: 'The Drip Project',
+  //   github: 'https://github.com',
+  //   demo: ''
+  // }
 ]
 
 

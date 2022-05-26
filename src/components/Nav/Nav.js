@@ -1,22 +1,26 @@
-import React, {Link, useState, setState} from 'react'
-import './Nav.css'
+import React from 'react'
+import { NavLink} from 'react-router-dom'
 import {RiHomeSmileLine} from 'react-icons/ri'
 import {BiWinkSmile} from 'react-icons/bi'
 import {TiFolderOpen} from 'react-icons/ti'
 import {TiMessages} from 'react-icons/ti'
-
+import './Nav.css'
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#")
  
   return (
+    <div>
     <nav>
-      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><RiHomeSmileLine/></a>
-      <a href="#About" onClick={() => setActiveNav('#About')} className={activeNav === '#About' ? 'active' : ''}><BiWinkSmile/></a>
-      <a href="#Projects" onClick={() => setActiveNav('#Projects')} className={activeNav === '#Projects' ? 'active' : ''}><TiFolderOpen/></a>
-      <a href="#Contact" onClick={() => setActiveNav('#Contact')} className={activeNav === '#Contact' ? 'active' : ''}><TiMessages/></a>
+      
+      <NavLink to="/"><RiHomeSmileLine/></NavLink>
+      <NavLink to="/About"><BiWinkSmile/></NavLink>
+      <NavLink to="/Projects"><TiFolderOpen/></NavLink>
+      <NavLink to="/Contact"><TiMessages/></NavLink>
+      
     </nav>
+    </div>
   )
 }
+
 
 export default Nav

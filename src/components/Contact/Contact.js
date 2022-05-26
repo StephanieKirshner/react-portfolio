@@ -1,9 +1,9 @@
 import React, { useRef }  from 'react'
-import './Contact.css'
 import {HiOutlineMail} from 'react-icons/hi'
 import {FiPhone} from 'react-icons/fi'
 import {RiMessengerLine} from 'react-icons/ri'
 import emailjs from '@emailjs/browser';
+import './Contact.css'
 
 const Contact = () => {
   const form = useRef();

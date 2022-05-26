@@ -1,5 +1,4 @@
 import React from 'react'
-import './About.css'
 import meCrimpHair from '../../assets/meCrimpHair.jpg'
 import {AiOutlineHtml5} from 'react-icons/ai'
 import {IoLogoCss3} from 'react-icons/io'
@@ -12,7 +11,7 @@ import {FaJira} from 'react-icons/fa'
 import {SiWordpress} from 'react-icons/si'
 import banyanLabs from '../../assets/banyanLabs.png'
 import logo from '../../assets/logo.png'
-
+import './About.css'
 
 
 
